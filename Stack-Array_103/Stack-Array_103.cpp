@@ -16,6 +16,7 @@ public:
 	void push() {
 		if (top == 4) { //step 1
 			cout << "Number of data exceeds the limit." << endl;
+			return;
 		}
 
 		cout << "\Enter a element: ";
@@ -27,6 +28,7 @@ public:
 		stack_array[top] = element;  //step 3
 		cout << endl;
 		cout << element << " Ditambahkan(pushed)" << endl;
+
 	}
 	void pop() {
 		if (empty()) {  //step 1
