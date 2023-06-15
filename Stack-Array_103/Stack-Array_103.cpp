@@ -13,18 +13,20 @@ public:
 		top = -1;
 	}
 
-	string push(string element) {
+	void push() {
 		if (top == 4) { //step 1
 			cout << "Number of data exceeds the limit." << endl;
-			return"";
 		}
+
+		cout << "\Enter a element: ";
+		string element;
+		getline(cin, element);
+		top++; //step 2
 
 		top++;  //step 2
 		stack_array[top] = element;  //step 3
 		cout << endl;
 		cout << element << " Ditambahkan(pushed)" << endl;
-
-		return element;
 	}
 	void pop() {
 		if (empty()) {  //step 1
@@ -65,6 +67,7 @@ int main() {
 		string input;
 		getline(cin, input);
 		char ch = (input.empty() ? '0' : input[0]);
+		
 	}
 }
 
