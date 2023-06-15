@@ -37,3 +37,8 @@ void pop() {
 	cout << "\nThe popped element is: " << stack_array[top] << endl;  //step2
 	top--;  //step 3 decremenet
 }
+
+//Method for check if data is empty
+bool empty() {
+	return (top == -1);
+}
