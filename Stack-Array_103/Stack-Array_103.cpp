@@ -19,7 +19,7 @@ public:
 			return;
 		}
 
-		cout << "\Enter a element: ";
+		cout << "Enter a element: ";
 		string element;
 		getline(cin, element);
 		top++; //step 2
@@ -71,9 +71,7 @@ int main() {
 		char ch = (input.empty() ? '0' : input[0]);
 		switch (ch) {
 		case '1': {
-			cout << "\nEnter an element: ";
-			string element;
-			getline(cin, element);
+
 			s.push();
 			break;
 		}
@@ -93,7 +91,9 @@ int main() {
 			cout << "\nInvalid choice." << endl;
 			break;
 
+		}
 	}
+
 }
 
 
